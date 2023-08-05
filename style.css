@@ -17,6 +17,8 @@ header{
     margin-bottom: 15px;
 }
 
+
+
 /*HEADER - подробно*/
 .topnav_panel{
     display: flex;
@@ -44,7 +46,7 @@ header{
     justify-content: space-between;
     width: 100%;
     height: 90px;
-    background: #1fff;
+    background: #fff;
 }
 .topnav_logo img{
     width: 200px;
@@ -59,4 +61,24 @@ header{
     width: 100%;
     height: 40px;
     background:linear-gradient(#eeeeee, #fff);
+}
+
+
+
+/*MAIN - подробно*/
+.body_container{
+    height: 1330px;
+    width: 100%-80px;
+    margin: 0 40px 40px 40px;
+    background: rgb(142, 250, 250);
+    display: flex;
+    justify-content: flex-start;  
+}
+.left_content{
+    width: 33.33%;
+    background: #adac5c;
+}
+.right_content{
+    width: 100%;
+    background: #ad5c5c;
 }
