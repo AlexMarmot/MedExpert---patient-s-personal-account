@@ -96,7 +96,6 @@ footer{
 .left_content{
     width: 320px;
     background: #fff;
-    margin-right: 40px;
 }
 
 .right_content{
@@ -397,4 +396,73 @@ footer{
     color: #fff;
     font-family: 'Roboto', 'light';
     font-size: 14px;
+}
+
+/*Модальное окно*/
+.my_modal{
+    border: 1px #000 solid;
+}
+.modal_title{
+    height: 60px;
+    font-family: 'Roboto', 'Black';
+    font-size: 30px;
+    background: #5ab577;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.modal_title h3{
+    margin-left: 30px;
+    
+    vertical-align: middle;
+    line-height: 60px;
+}
+.modal_data form{
+    font-family: 'Roboto', 'light';
+    font-size: 17px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modal_data form input{
+    margin-left: 5%;
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border:0;
+    border-bottom: 1px #000 solid;
+}
+.modal_data form input:focus { 
+    border-radius: 15px;
+}
+#confirmButton{
+    height: 40px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    background: #5ab577;
+    font-family: 'Roboto', 'Black';
+    font-size: 20px;
+    color: #fff;
+    border: 1px #000 solid;
+}
+#confirmButton:active{
+    border: 2px #000 solid !important;
+    border-radius: 0px;
+    background: #2f944f;
+}
+#showButton{
+    margin-top: -7px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 5%;
+    font-family: 'Roboto', 'Black';
+    height: 30px;
+    background: none;
+    border: 1px #000 solid;
+    border-radius: 15px;
+}
+#showButton:active{
+    background: #e6e6e6;
 }
