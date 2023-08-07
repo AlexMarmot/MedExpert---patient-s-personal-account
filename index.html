@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <title>Проект из макета</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/hystmodal.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 </head>
+<script src="libs/hystmodal.min.js"></script>
+<div class="hystmodal" id="myModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Закрыть</button>
+            <!-- Ваш HTML код модального окна -->
+        </div>
+    </div>
+</div>
 <body>
     <header>
         <div class="topnav_panel">
@@ -17,7 +27,7 @@
                 <a href="#">Запись онлайн</a>
             </nav>
             <nav class="right_nav">
-                <!--<img src="img/personal_data.png" alt="personal_data">--><a href="#">Личные данные</a>
+                <!--<img src="img/personal_data.png" alt="personal_data">--><a href="#" data-hystmodal="#myModal">Личные данные</a>
                 <!--<img src="img/exit.png" alt="exit">--><a href="#">Выход</a>
             </nav>
         </div>
@@ -155,8 +165,14 @@
     </main>
     <footer>
             <div class="footer_panel">
-                
+                <div class="left_info">
+                    <p>© 2018 Atlas Patient</p>
+                </div>
+                <div class="go_back">
+                    <a href="#">Наверх &#8593;</a>
+                </div>
             </div>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

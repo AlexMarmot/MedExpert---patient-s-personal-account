@@ -8,7 +8,7 @@ a{
     color: #000;
 }
 body{
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'light';
     font-size: 14px;
     height: 100%;
     display: flex;
@@ -31,7 +31,7 @@ body{
 footer{
     width: 100%;
     height: 100px;
-    background: #7cb47a;
+    background: #5ab577;
     flex-grow:0;
     flex-shrink:1;
 }
@@ -96,6 +96,7 @@ footer{
 .left_content{
     width: 320px;
     background: #fff;
+    margin-right: 40px;
 }
 
 .right_content{
@@ -112,7 +113,7 @@ footer{
 }
 .title_filter{
     height: 60px;
-    background: #7cb47a;
+    background: #5ab577;
     color: #fff;
     font-family: 'Roboto', 'black';
     font-weight: bold;
@@ -163,7 +164,7 @@ footer{
     width: 240px;
     height: 30px;
     margin: 0 20px 35px 20px;
-    background: #7cb47a;
+    background: #5ab577;
     color: #fff;
 }
 .show_all p{
@@ -183,7 +184,7 @@ footer{
 }
 .title_journal{
     height: 60px;
-    background: #7cb47a;
+    background: #5ab577;
     color: #fff;
     font-family: 'Roboto', 'black';
     font-weight: bold;
@@ -289,7 +290,7 @@ footer{
 }
   
 .opp_color_block:nth-child(odd) {
-    background-color: #7cb47a;
+    background-color: #5ab577;
 }
 .opp_text_block {
     width: 340px;
@@ -380,3 +381,20 @@ footer{
 }
 
 /*FOOTER - подробно*/
+.footer_panel{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 40px auto 40px;
+    vertical-align: middle;
+    line-height: 100px;
+}
+.footer_panel p{
+    color: #fff;
+    font-family: 'Roboto', 'light';
+    font-size: 14px;
+}
+.footer_panel a{
+    color: #fff;
+    font-family: 'Roboto', 'light';
+    font-size: 14px;
+}
