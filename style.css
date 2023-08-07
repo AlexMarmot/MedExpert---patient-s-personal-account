@@ -70,7 +70,6 @@ header{
     height: 1330px;
     width: calc(100% - 80px);
     margin: 0 40px 40px 40px;
-    background: rgb(142, 250, 250);
     display: flex;
     justify-content: space-between;
     row-gap: auto;
@@ -82,7 +81,6 @@ header{
 
 .right_content{
     width: 960px;
-    background: #ad5c5c;
 }
 
 /*MAIN - подробно - левая колонка - фильтр исследований*/
@@ -247,7 +245,6 @@ header{
     justify-items: center; 
 }
 .opp_blocks > div {
-    background: rgb(241, 101, 41); 
     width: 480px; 
     height: 140px; 
     margin: 0px; 
@@ -276,7 +273,6 @@ header{
     background-color: #7cb47a;
 }
 .opp_text_block {
-    background: rgb(241, 101, 41); 
     width: 340px;
     height: 140px;
     display: flex;
@@ -291,3 +287,75 @@ header{
 }
 
 /*MAIN - подробно - правый блок - инструкция*/
+.inst_one{
+    margin-top: 40px;
+    height: 260px;
+    display: flex;
+    align-items: center; 
+    justify-items: center; 
+}
+
+.instruction_img{
+    height: 100%;
+    width: 480px;
+}
+.text_of_instruction_one{ /*контейнер с левой частью первой инструкции*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-right: 40px;
+}
+.one_h_instruction{ /*заголовок "Инструкция*/
+    height: 110px;
+}
+.one_h_instruction h3{ /*заголовок "Инструкция" - текст*/
+    font-family: 'Roboto', 'Black';
+    font-size: 30px;
+    margin-top: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 1px;
+}
+.one_text{ /*Текст с цифрой первого пункта - контейнер*/ /*В нижней части это класс "text_of_instruction_two"*/
+    height: 87px;
+    display: flex;
+    align-content: flex-start;
+}
+.gray_number{ /*серая цифра*/
+    width: 110px;
+    height: 87px;
+    margin-left: 5px;
+}
+.instruction_description{ /*контейнер с текстом рядом с 01*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 1px;
+    margin-left: 17px;
+}
+.instruction_description h4{
+    font-family: 'Roboto', 'Bold';
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 7px;
+}
+.instruction_description p{
+    font-family: 'Roboto', 'Light';
+    font-size: 17px;
+    line-height: 24px;
+}
+
+
+.inst_two{
+    margin-top: 42px;
+    display: flex;
+    align-items: center; 
+    justify-items: center; 
+}
+
+.text_of_instruction_two {/*Текст с цифрой первого пункта - контейнер*/ /*В верхней части это класс "one_text"*/
+        height: 87px;
+        display: flex;
+        align-content: flex-start;
+}
