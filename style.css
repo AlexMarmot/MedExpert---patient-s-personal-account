@@ -15,6 +15,11 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+  overflow: auto;
+}
+.body_container,
+.right_content {
+  overflow: hidden;
 }
 header {
   width: 100%;
@@ -54,8 +59,8 @@ footer {
 .right_nav a {
   margin-left: 35px;
 }
-.right_nav a img{
-    margin-right: 10px;
+.right_nav a img {
+  margin-right: 10px;
 }
 
 .topnav_logo {
@@ -170,7 +175,7 @@ footer {
 .show_all p {
   margin-left: 10px;
 }
-.show_all .icon {
+.show_all .icon_show {
   margin-right: 10px;
 }
 
@@ -205,12 +210,12 @@ footer {
 .research_from_journal {
   height: 60px;
 }
-.research_from_journal p{
-    margin-left: 30px;
-    line-height: 20px;
-  }
+.research_from_journal p {
+  margin-left: 30px;
+  line-height: 20px;
+}
 .research_from_journal p:first-child {
-    margin-top: 15px;
+  margin-top: 15px;
   color: #8c8c8c;
 }
 .research_from_journal:nth-child(even) {
@@ -481,48 +486,48 @@ footer {
 }
 
 /*Hover-эффекты*/
-.list_of_research li{
-    position: relative;
-    cursor: pointer;
+.list_of_research li {
+  position: relative;
+  cursor: pointer;
 }
 .list_of_research li:after {
-	content: "";
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: -3px;
-    width: 0;
-    height: 1.5px;
-    background-color: #5ab577;
-    transition: width 0.5s;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1.5px;
+  background-color: #5ab577;
+  transition: width 0.5s;
 }
 
 .list_of_research li:hover:after {
-	content: "";
-    width: 100%;
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    height: 2px;
-    background-color: #5ab577;
-    transition: width 0.5s;
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #5ab577;
+  transition: width 0.5s;
 }
 
-header a{
-    -webkit-transition: all 1s ease;
-            transition: all 1s ease;
-  }
-  header a:hover{
-    color: #5ab577;
-  }
-.show_all:active{
+header a {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+header a:hover {
+  color: #5ab577;
+}
+.show_all:active {
   background: #2f944f;
 }
-.opp_color_block{
-    -webkit-transition: all 1s ease;
-            transition: all 1s ease;
-  }
+.opp_color_block {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
 .opp_color_block:hover {
   border-radius: 100px;
 }
@@ -535,4 +540,70 @@ header a{
   .right_content {
     margin-left: 350px;
   }
+}
+
+@media screen and (max-width: 1350px) {
+  .opp_color_block {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .body_container {
+    height: auto !important;
+  }
+  .opp_blocks {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-items: flex-start;
+    justify-items: center;
+  }
+  .opp_blocks > div {
+    width: 100%;
+    height: auto;
+  }
+
+  .opp_color_block {
+    width: 90px;
+    height: 90px;
+  }
+  .inside_opp_block {
+    width: 100%;
+    height: 90px;
+  }
+
+  .opp_color_block {
+    height: 90px;
+  }
+  .opp_text_block {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+  }
+  .one_h_instruction h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 1px;
+  }
+}
+@media screen and (max-width: 1280px) {
+    .instruction_img {
+        width: 480px;
+      }
+      .text_of_instruction_one {
+        /*контейнер с левой частью первой инструкции*/
+        margin-right: 0;
+      }
+      .one_h_instruction h3 {
+        font-size: 20px;
+    }
+    .text_of_instruction_two{
+        height: auto;
+        display: initial;
+    }
+}  
+@media screen and (max-width: 1105px){
+    /*Скрытие боковых элементов*/
 }

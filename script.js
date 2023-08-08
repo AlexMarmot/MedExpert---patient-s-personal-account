@@ -23,12 +23,24 @@ function validateForm() {
     
     return true;
 }
-
+/*Видимость пароля*/
 function togglePasswordVisibility(inputId) {
     var input = document.getElementById(inputId);
     if (input.type === "password") {
         input.type = "text";
     } else {
         input.type = "password";
+    }
+}
+
+/*Скрытие боковых элементов*/
+menu.onclick = function myFunction(){
+    let x = document.getElementById('myLeftContent');
+
+    if(x.className === "left_content"){
+        x.className += " responsive";
+    }
+    else{
+        x.className = "left_content";
     }
 }
