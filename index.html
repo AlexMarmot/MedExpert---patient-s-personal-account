@@ -9,14 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 </head>
-<script src="libs/hystmodal.min.js"></script>
+
+<body>
+    
+    <script src="libs/hystmodal.min.js"></script>
     <div class="hystmodal" id="myModal" aria-hidden="true">
         <div class="hystmodal__wrap">
             <div class="hystmodal__window" role="dialog" aria-modal="true">
                 <button data-hystclose class="hystmodal__close">Закрыть</button>
                 <div class="my_modal">
                     <div class="modal_title">
-                        <h3>Настройка личных данных</h2>
+                        <h3>Настройка личных данных</h3>
                     </div>
                     <div class="modal_data">
                         <form id="registrationForm" onsubmit="return validateForm()">
@@ -35,18 +38,18 @@
             </div>
         </div>
     </div>
-<body>
+
     <header>
         <div class="topnav_panel">
             <nav class="left_nav">
-                <a href="#">Главная</a>
+                <a href="https://atlas-patient.ru">Главная</a>
                 <a href="#">Обследования и анализы</a>
                 <a href="#">Запись онлайн</a>
             </nav>
             <nav class="right_nav">
                 <a href="#" data-hystmodal="#myModal">
                     <img src="img/personal_data.png" alt="personal_data"> Личные данные</a>
-                <a href="#">
+                <a href="https://atlas-patient.ru/Login.html">
                     <img src="img/exit.png" alt="exit">Выход</a>
             </nav>
         </div>
@@ -72,12 +75,14 @@
                             <li><img src="img/uzi.png" alt="uzi">УЗИ</li>
                             <li><img src="img/fd.png" alt="fd">ФД</li>
                             <li><img src="img/kons.png" alt="kons">Конс</li>
-                            <li><img src="img/analysis.png" alt="analysis">Анализы</li>
+                            <li><img src="img/analysis.png" alt="analysis">Анализы</li> 
                         </ul>
                         </div>
                         <div  class="body_img">
                         <img src="img/body.png" alt="заглушка">
                         </div>
+                        
+                        
                     </div>
                     <div class="bottles">
                         <img src="img/red.png" alt="red">
@@ -180,7 +185,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </main>
     <footer>
             <div class="footer_panel">
@@ -192,6 +196,7 @@
                 </div>
             </div>
     </footer>
+
+    <script src="script"></script>    
 </body>
-<script src="script.js"></script>
 </html>
