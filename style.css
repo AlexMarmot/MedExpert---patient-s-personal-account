@@ -1,468 +1,538 @@
 /*ОСНОВНОЕ*/
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-a{
-    text-decoration: none;
-    color: #000;
+a {
+  text-decoration: none;
+  color: #000;
 }
-body{
-    font-family: 'Roboto', 'light';
-    font-size: 14px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start;
-    flex-direction: column; 
+body {
+  font-family: "Roboto", "light";
+  font-size: 14px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
 }
-header{
-    width: 100%;
-    background:linear-gradient(#ededed, #e6e6e6);
-    margin-bottom: 15px;
-    flex-grow:0;
-    flex-shrink:1;
-    align-self:auto;
+header {
+  width: 100%;
+  background: linear-gradient(#ededed, #e6e6e6);
+  margin-bottom: 15px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  align-self: auto;
 }
-body{
-    flex-grow:1;
-    align-self:auto;
+body {
+  flex-grow: 1;
+  align-self: auto;
 }
-footer{
-    width: 100%;
-    height: 100px;
-    background: #5ab577;
-    flex-grow:0;
-    flex-shrink:1;
+footer {
+  width: 100%;
+  height: 100px;
+  background: #5ab577;
+  flex-grow: 0;
+  flex-shrink: 1;
 }
-
-
 
 /*HEADER - подробно*/
-.topnav_panel{
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Roboto', light;
-    height: 40px;
+.topnav_panel {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", light;
+  font-size: 14px;
+  height: 40px;
 }
-.topnav_panel nav{
-    margin: 15px 40px 14px 40px;
+.topnav_panel > nav {
+  margin: 15px 40px 14px 40px;
 }
-.left_nav a{
-    margin-right: 35px;
-}
-.right_nav a{
-    margin-top: 1px;
-    margin-left: 35px;
-}
-.right_nav img{
-    width: 28px;
-    margin-bottom: -14px;
+.left_nav a {
+  margin-right: 35px;
 }
 
-.topnav_logo{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 90px;
-    background: #fff;
+.right_nav a {
+  margin-left: 35px;
 }
-.topnav_logo img{
-    width: 200px;
-    margin: 26px 16px;
-}
-.patient_name{
-    font-weight: bold;
-    text-align: right;
-    margin: 40px 35px;
-}
-.topnav_gradient{
-    width: 100%;
-    height: 40px;
-    background:linear-gradient(#eeeeee, #fff);
-}
-
-
-
-/*MAIN - подробно*/
-.body_container{
-    height: 1330px;
-    width: calc(100% - 80px);
-    margin: 0 40px 40px 40px;
-    display: flex;
-    justify-content: space-between;
-    row-gap: auto;
-}
-.left_content{
-    width: 320px;
-    background: #fff;
-}
-
-.right_content{
-    width: 960px;
-}
-
-/*MAIN - подробно - левая колонка - фильтр исследований*/
-.research_filters{
-    width: 280px;
-    height: 560px;
-    margin-bottom: 40px;
-    background:#fff;
-    box-shadow: 10px 10px 20px -5px #e9e9e9;
-}
-.title_filter{
-    height: 60px;
-    background: #5ab577;
-    color: #fff;
-    font-family: 'Roboto', 'black';
-    font-weight: bold;
-    font-size: 17px;
-}
-.title_filter p{
-    padding-left: 30px;
-    vertical-align: middle;
-    line-height: 60px;
-}
-.types_of_research{
-    height: 375px;
-    display: flex;
-    align-items: center;  
-    margin-bottom: 23px;
-}
-.body_img{
-    width: 140px;
-    height: 274px;
-    margin-top: 9px;
-}
-.types_of_research li{
-    list-style: none;
-    display: flex;
-    margin-top: 30px;
-    font-family: 'Roboto', 'light';
-    font-size: 14px;
-}
-.types_of_research img{
-    margin-left: 14px;
-    margin-right: 23px;
-}
-.bottles{
-    display: flex;
-    gap: 20px;
-    margin-left: 23px;
-}
-
-.bottles img{
-    width: 20px;
-    height: 29px;
-    margin-bottom: 30px;
-}
-.show_all{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-    height: 30px;
-    margin: 0 20px 35px 20px;
-    background: #5ab577;
-    color: #fff;
-}
-.show_all p{
-    margin-left: 10px;
-}
-.show_all .icon{
+.right_nav a img{
     margin-right: 10px;
 }
 
+.topnav_logo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  background: #fff;
+}
+.topnav_logo img {
+  width: 200px;
+  margin: 26px 16px;
+}
+.patient_name {
+  text-align: right;
+  margin: 40px 35px;
+}
+.patient_name {
+  font-family: "Roboto", "Bold";
+  font-size: 14px;
+}
+.topnav_gradient {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(#eeeeee, #fff);
+}
+
+/*MAIN - подробно*/
+.body_container {
+  height: 1330px;
+  width: calc(100% - 80px);
+  margin: 0 40px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  row-gap: auto;
+}
+.left_content {
+  width: 320px;
+  background: #fff;
+}
+
+.right_content {
+  width: 960px;
+  margin-left: 20px;
+}
+
+/*MAIN - подробно - левая колонка - фильтр исследований*/
+.research_filters {
+  width: 280px;
+  height: 560px;
+  margin-bottom: 40px;
+  background: #fff;
+  box-shadow: 10px 10px 20px -5px #e9e9e9;
+}
+.title_filter {
+  height: 60px;
+  background: #5ab577;
+  color: #fff;
+  font-family: "Roboto", "black";
+  font-weight: bold;
+  font-size: 17px;
+}
+.title_filter p {
+  padding-left: 30px;
+  vertical-align: middle;
+  line-height: 60px;
+}
+.types_of_research {
+  height: 375px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.body_img {
+  width: 140px;
+  height: 274px;
+  margin-top: 9px;
+}
+.types_of_research li {
+  list-style: none;
+  display: flex;
+  margin-top: 30px;
+  font-family: "Roboto", "light";
+  font-size: 14px;
+}
+.types_of_research img {
+  margin-left: 14px;
+  margin-right: 12px;
+}
+.bottles {
+  display: flex;
+  gap: 20px;
+  margin-left: 23px;
+}
+
+.bottles img {
+  width: 21px;
+  height: 29px;
+  margin-bottom: 30px;
+}
+.show_all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 240px;
+  height: 30px;
+  margin: 0 20px 35px 20px;
+  background: #5ab577;
+  color: #fff;
+}
+.show_all p {
+  margin-left: 10px;
+}
+.show_all .icon {
+  margin-right: 10px;
+}
 
 /*MAIN - подробно - левая колонка - журнал исследований*/
 
-.research_journal{
-    width: 280px;
-    height: 440px;
-    box-shadow: 10px 10px 20px -5px #e9e9e9;
+.research_journal {
+  width: 280px;
+  height: 440px;
+  box-shadow: 10px 10px 20px -5px #e9e9e9;
 }
-.title_journal{
-    height: 60px;
-    background: #5ab577;
-    color: #fff;
-    font-family: 'Roboto', 'black';
-    font-weight: bold;
-    font-size: 17px;
+.title_journal {
+  height: 60px;
+  background: #5ab577;
+  color: #fff;
+  font-family: "Roboto", "black";
+  font-size: 17px;
 }
-.title_journal p{
-    padding-left: 30px;
-    vertical-align: middle;
-    line-height: 60px;
+.title_journal p {
+  padding-left: 30px;
+  vertical-align: middle;
+  line-height: 60px;
 }
 
-.list_of_journal{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto', 'light';
-    font-size: 14px;
-    background: #ededed;
+.list_of_journal {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", "light";
+  font-size: 14px;
+  background: #ededed;
 }
-.research_from_journal{
-    height: 60px;
+.research_from_journal {
+  height: 60px;
 }
-.research_from_journal p:first-child{
-    color: #8c8c8c;
+.research_from_journal p{
+    margin-left: 30px;
+    line-height: 20px;
+  }
+.research_from_journal p:first-child {
+    margin-top: 15px;
+  color: #8c8c8c;
 }
 .research_from_journal:nth-child(even) {
-    background-color: #fff;
+  background-color: #fff;
 }
-  
+
 .research_from_journal:nth-child(odd) {
-    background-color: #ededed;
+  background-color: #ededed;
 }
 
 /*MAIN - подробно- правый блок*/
-.welcome_title{
-    height: 300px;
-    background-image: url(img/background.png);
-    background-size: 960px 300px;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
+.welcome_title {
+  height: 300px;
+  background-image: url(img/background.png);
+  background-size: 960px 300px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
 }
-.text_block{
-    width: 415px;
-    margin-left: 41px;
-    margin-bottom: 60px;
+.text_block {
+  width: 415px;
+  margin-left: 41px;
+  margin-bottom: 60px;
 }
-.text_block h1{
-    font-family: 'Roboto', 'Black';
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 41px;
+.text_block h1 {
+  font-family: "Roboto", "Black";
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 41px;
 }
-.text_block h3{
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: normal;
+.text_block h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
 }
 /*MAIN - подробно - правый блок - возможности*/
-.opportunities{
-   height: 100%;
+.opportunities {
+  height: 100%;
 }
- .opportunities_title h2{
-    font-family: 'Roboto', 'Black';
-    font-size: 30px;
-    vertical-align: middle;
-    line-height: 100px;
- }
+.opportunities_title h2 {
+  font-family: "Roboto", "Black";
+  font-size: 30px;
+  vertical-align: middle;
+  line-height: 100px;
+}
 
-*{box-sizing: border-box;}
-.opp_blocks{
-    display: grid; 
-    height: 320px; 
-    grid-template-columns: 480px 480px; 
-    grid-template-rows: 140px 140px; 
-    grid-row-gap: 40px; 
-    align-items: center; 
-    justify-items: center; 
+* {
+  box-sizing: border-box;
+}
+.opp_blocks {
+  display: grid;
+  height: 320px;
+  grid-template-columns: 480px 480px;
+  grid-template-rows: 140px 140px;
+  grid-row-gap: 40px;
+  align-items: center;
+  justify-items: center;
 }
 .opp_blocks > div {
-    width: 480px; 
-    height: 140px; 
-    margin: 0px; 
-    padding: 0px; 
+  width: 480px;
+  height: 140px;
+  margin: 0px;
+  padding: 0px;
 }
 .inside_opp_block {
-    display: flex; 
-    height: 140px; 
-    flex-wrap: nowrap; 
-    align-content: flex-start; 
+  display: flex;
+  height: 140px;
+  flex-wrap: nowrap;
+  align-content: flex-start;
 }
 .opp_color_block {
-    width: 140px;
-    height: 140px;
+  width: 140px;
+  height: 140px;
 }
-.opp_color_block{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-.inside_opp_block:nth-child(3n+2) .opp_color_block, .inside_opp_block:nth-child(3n+3) .opp_color_block {
-    background-color: #ededed;
+.opp_color_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+.inside_opp_block:nth-child(3n + 2) .opp_color_block,
+.inside_opp_block:nth-child(3n + 3) .opp_color_block {
+  background-color: #ededed;
+}
+
 .opp_color_block:nth-child(odd) {
-    background-color: #5ab577;
+  background-color: #5ab577;
 }
 .opp_text_block {
-    width: 340px;
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    line-height: 24px;
+  width: 340px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  line-height: 24px;
 }
-.opp_text_block p{
-    margin-left: 31px;
-    margin-right: 29px;
+.opp_text_block p {
+  margin-left: 31px;
+  margin-right: 29px;
 }
 
 /*MAIN - подробно - правый блок - инструкция*/
-.inst_one{
-    margin-top: 40px;
-    height: 260px;
-    display: flex;
-    align-items: center; 
-    justify-items: center; 
+.inst_one {
+  margin-top: 40px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
-.instruction_img{
-    height: 100%;
-    width: 480px;
+.instruction_img {
+  height: 100%;
+  width: 480px;
 }
-.text_of_instruction_one{ /*контейнер с левой частью первой инструкции*/
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    margin-right: 40px;
+.text_of_instruction_one {
+  /*контейнер с левой частью первой инструкции*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-right: 40px;
 }
-.one_h_instruction{ /*заголовок "Инструкция*/
-    height: 110px;
+.one_h_instruction {
+  /*заголовок "Инструкция*/
+  height: 110px;
 }
-.one_h_instruction h3{ /*заголовок "Инструкция" - текст*/
-    font-family: 'Roboto', 'Black';
-    font-size: 30px;
-    margin-top: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 1px;
+.one_h_instruction h3 {
+  /*заголовок "Инструкция" - текст*/
+  font-family: "Roboto", "Black";
+  font-size: 30px;
+  margin-top: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 1px;
 }
-.one_text{ /*Текст с цифрой первого пункта - контейнер*/ /*В нижней части это класс "text_of_instruction_two"*/
-    height: 87px;
-    display: flex;
-    align-content: flex-start;
+.one_text {
+  /*Текст с цифрой первого пункта - контейнер*/ /*В нижней части это класс "text_of_instruction_two"*/
+  height: 87px;
+  display: flex;
+  align-content: flex-start;
 }
-.gray_number{ /*серая цифра*/
-    width: 110px;
-    height: 87px;
-    margin-left: 5px;
+.gray_number {
+  /*серая цифра*/
+  width: 110px;
+  height: 87px;
+  margin-left: 5px;
 }
-.instruction_description{ /*контейнер с текстом рядом с 01*/
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-bottom: 1px;
-    margin-left: 17px;
+.instruction_description {
+  /*контейнер с текстом рядом с 01*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 1px;
+  margin-left: 17px;
 }
-.instruction_description h4{
-    font-family: 'Roboto', 'Bold';
-    font-size: 17px;
-    line-height: 24px;
-    margin-bottom: 7px;
+.instruction_description h4 {
+  font-family: "Roboto", "Bold";
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 7px;
 }
-.instruction_description p{
-    font-family: 'Roboto', 'Light';
-    font-size: 17px;
-    line-height: 24px;
-}
-
-
-.inst_two{
-    margin-top: 42px;
-    display: flex;
-    align-items: center; 
-    justify-items: center; 
+.instruction_description p {
+  font-family: "Roboto", "Light";
+  font-size: 17px;
+  line-height: 24px;
 }
 
-.text_of_instruction_two {/*Текст с цифрой первого пункта - контейнер*/ /*В верхней части это класс "one_text"*/
-        height: 87px;
-        display: flex;
-        align-content: flex-start;
+.inst_two {
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.text_of_instruction_two {
+  /*Текст с цифрой первого пункта - контейнер*/ /*В верхней части это класс "one_text"*/
+  height: 87px;
+  display: flex;
+  align-content: flex-start;
 }
 
 /*FOOTER - подробно*/
-.footer_panel{
-    display: flex;
-    justify-content: space-between;
-    margin: auto 40px auto 40px;
-    vertical-align: middle;
-    line-height: 100px;
+.footer_panel {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 40px auto 40px;
+  vertical-align: middle;
+  line-height: 100px;
 }
-.footer_panel p{
-    color: #fff;
-    font-family: 'Roboto', 'light';
-    font-size: 14px;
+.footer_panel p {
+  color: #fff;
+  font-family: "Roboto", "light";
+  font-size: 14px;
 }
-.footer_panel a{
-    color: #fff;
-    font-family: 'Roboto', 'light';
-    font-size: 14px;
+.footer_panel a {
+  color: #fff;
+  font-family: "Roboto", "light";
+  font-size: 14px;
 }
 
 /*Модальное окно*/
-.my_modal{
-    border: 1px #000 solid;
+.my_modal {
+  border: 1px #000 solid;
 }
-.modal_title{
-    height: 60px;
-    font-family: 'Roboto', 'Black';
-    font-size: 30px;
-    background: #5ab577;
-    color: #fff;
-    margin-bottom: 10px;
+.modal_title {
+  height: 60px;
+  font-family: "Roboto", "Black";
+  font-size: 30px;
+  background: #5ab577;
+  color: #fff;
+  margin-bottom: 10px;
 }
-.modal_title h3{
-    margin-left: 30px;
-    
-    vertical-align: middle;
-    line-height: 60px;
+.modal_title h3 {
+  margin-left: 30px;
+
+  vertical-align: middle;
+  line-height: 60px;
 }
-.modal_data form{
-    font-family: 'Roboto', 'light';
-    font-size: 17px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.modal_data form {
+  font-family: "Roboto", "light";
+  font-size: 17px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.modal_data form input{
-    margin-left: 5%;
-    width: 90%;
-    height: 40px;
-    padding-left: 10px;
-    border:0;
-    border-bottom: 1px #000 solid;
+.modal_data form input {
+  margin-left: 5%;
+  width: 90%;
+  height: 40px;
+  padding-left: 10px;
+  border: 0;
+  border-bottom: 1px #000 solid;
 }
-.modal_data form input:focus { 
-    border-radius: 15px;
+.modal_data form input:focus {
+  border-radius: 15px;
 }
-#confirmButton{
-    height: 40px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: 5%;
-    margin-bottom: 10px;
-    background: #5ab577;
-    font-family: 'Roboto', 'Black';
-    font-size: 20px;
-    color: #fff;
-    border: 1px #000 solid;
+#confirmButton {
+  height: 40px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  background: #5ab577;
+  font-family: "Roboto", "Black";
+  font-size: 20px;
+  color: #fff;
+  border: 1px #000 solid;
 }
-#confirmButton:active{
-    border: 2px #000 solid !important;
-    border-radius: 0px;
-    background: #2f944f;
+#confirmButton:active {
+  border: 2px #000 solid !important;
+  border-radius: 0px;
+  background: #2f944f;
 }
-#showButton{
-    margin-top: -7px;
-    width: 30%;
-    margin-left: auto;
-    margin-right: 5%;
-    font-family: 'Roboto', 'Black';
-    height: 30px;
-    background: none;
-    border: 1px #000 solid;
-    border-radius: 15px;
+#showButton {
+  margin-top: -7px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: 5%;
+  font-family: "Roboto", "Black";
+  height: 30px;
+  background: none;
+  border: 1px #000 solid;
+  border-radius: 15px;
 }
-#showButton:active{
-    background: #e6e6e6;
+#showButton:active {
+  background: #e6e6e6;
+}
+
+/*Hover-эффекты*/
+.list_of_research li{
+    position: relative;
+    cursor: pointer;
+}
+.list_of_research li:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1.5px;
+    background-color: #5ab577;
+    transition: width 0.5s;
+}
+
+.list_of_research li:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #5ab577;
+    transition: width 0.5s;
+}
+
+header a{
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+  }
+  header a:hover{
+    color: #5ab577;
+  }
+.show_all:active{
+  background: #2f944f;
+}
+.opp_color_block{
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+  }
+.opp_color_block:hover {
+  border-radius: 100px;
+}
+
+/*Адаптив*/
+@media screen and (min-width: 1650px) {
+  .body_container {
+    justify-content: flex-start !important;
+  }
+  .right_content {
+    margin-left: 350px;
+  }
 }
