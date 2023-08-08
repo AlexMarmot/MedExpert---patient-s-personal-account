@@ -33,14 +33,3 @@ function togglePasswordVisibility(inputId) {
     }
 }
 
-/*Скрытие боковых элементов*/
-menu.onclick = function myFunction(){
-    let x = document.getElementById('myLeftContent');
-
-    if(x.className === "left_content"){
-        x.className += " responsive";
-    }
-    else{
-        x.className = "left_content";
-    }
-}
