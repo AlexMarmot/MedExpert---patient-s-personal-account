@@ -1,9 +1,9 @@
-//Модальное окно
+/*Модальное окно*/
 const myModal = new HystModal({
     linkAttributeName: "data-hystmodal",
 });
 
-//Модальное окно
+//Валидация 
 function validateForm() {
     var password = document.getElementById("password").value;
     var confirmPassword = document.getElementById("confirmPassword").value;
@@ -23,7 +23,15 @@ function validateForm() {
     
     return true;
 }
-/*Видимость пароля*/
+
+//Вывод сообщения об успешной валидации
+document.getElementById("confirmButton").addEventListener("click", function() {
+    if (validateForm()) {
+        alert("Спасибо за ваше обращение!");
+    }
+});
+
+//Кнопка видимости пароля
 function togglePasswordVisibility(inputId) {
     var input = document.getElementById(inputId);
     if (input.type === "password") {
